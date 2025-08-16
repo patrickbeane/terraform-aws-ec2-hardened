@@ -61,8 +61,8 @@ _Opens ingress for fast testing; **not** production‑safe._
 
 ```bash
 # 1. Clone and enter the project
-git clone https://github.com/patrickbeane/example-terraform-ec2.git
-cd example-terraform-ec2
+git clone https://github.com/patrickbeane/terraform-aws-ec2-hardened.git
+cd terraform-aws-ec2-hardened
 
 # 2. Initialize Terraform
 terraform init
