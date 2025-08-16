@@ -1,0 +1,20 @@
+# Copy to terraform.tfvars and edit to match your environment
+
+aws_region          = "us-east-1"
+ami_id              = "ami-0abcdef1234567890"   # Ubuntu 24.04 in your region
+public_key_path     = "~/.ssh/id_rsa.pub"
+
+# Lock down to your trusted IP(s) or ranges
+allowed_cidr_blocks = ["198.51.100.42/32"]
+
+# HTTPS-only by default (set true to allow HTTP 80)
+enable_http         = false
+
+# Service ports
+ssh_port            = 2222
+portainer_port      = 9443
+
+instance_type       = "t3.micro"
+
+# Environment label
+env = "demo"
